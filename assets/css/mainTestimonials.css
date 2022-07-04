@@ -4057,6 +4057,9 @@ input, select, textarea {
 		#footer .inner > * {
 			width: 100%;
 		}
+		#cta > p{
+			text-align: center;
+		}
 
 		#footer .inner form {
 			margin: 0 3em 4em 15em;

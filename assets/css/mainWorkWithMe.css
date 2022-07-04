@@ -254,6 +254,14 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
+		
+	}
+
+	.content > p{
+		text-align: center;
+	}
+	.content > a {
+		text-align: center;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -3017,7 +3025,7 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		margin: 0 0 2em 0;
+		margin: 0 0 4em 0;
 
 	}
 	
@@ -4068,6 +4076,10 @@ input, select, textarea {
 
 		#footer .inner > * {
 			width: 100%;
+		}
+		
+		#cta > p{
+			text-align: center;
 		}
 
 		#footer .inner form {
