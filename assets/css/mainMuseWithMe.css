@@ -3520,7 +3520,7 @@ input, select, textarea {
 			#banner {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #412f2e;
-				background-image: linear-gradient(to top, #dbc3a7, rgba(228, 149, 59, 0.8)), url("../../images/bg.jpg");
+				background-image: linear-gradient(to top, #d8be9f, rgba(228, 149, 59, 0.8)), url("../../images/bg.jpg");
 				background-size: auto,
  cover;
 				background-position: center,
