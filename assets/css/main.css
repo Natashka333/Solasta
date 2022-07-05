@@ -1125,7 +1125,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 			#banner a > .logo > img{
 				width: 300px;
-				height: 350px;
+				height: 300px;
 			}
 			.row {
 				display: flex;
