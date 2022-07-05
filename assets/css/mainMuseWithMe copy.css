@@ -257,7 +257,11 @@ input, select, textarea {
 	p {
 		margin: 0 0 2em 0;
 	}
-
+	
+	.inner p{
+	text-align: center;
+		
+	}
 	h1, h2, h3, h4, h5, h6 {
 		color: black;
 		font-family: Raleway, Helvetica, sans-serif;
@@ -3032,8 +3036,9 @@ input, select, textarea {
 			margin: 1.5em 3em 1.5em 0;
 			width: calc(50% - 1.5em);
 		}
-		.features article >h3{
-			color: white;
+		.features article >a{
+			color: black;
+			font-size: large;
 		}
 
 		.features.testimonials article {
@@ -3071,7 +3076,7 @@ input, select, textarea {
 			}
 
 				.features article .image img {
-					border-radius: 5px 5px 0 0;
+					border-radius: 5px 5px 5pc 5pc;
 					width: 100%;
 				}
 
@@ -3111,6 +3116,14 @@ input, select, textarea {
 					width: 100%;
 					margin: 0 0 2em 0 !important;
 				}
+				.features.testimonials article {
+					padding: 1.75em 1.75em 0.1em 1.75em ;
+					background-color: antiquewhite;
+					border-radius: 5px;
+					margin: 1.5em 3em 1.5em 0;
+					width: calc(100% - 1.5em);
+					color: red 
+				}	
 
 		}
 
@@ -3477,7 +3490,7 @@ input, select, textarea {
 			-ms-filter: blur(0);
 			filter: blur(0);
 			opacity: 1;
-			/*border-bottom: solid 2px rgba(255, 255, 255, 0.125);*/
+			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 			font-size: 2.25em;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;
@@ -3515,13 +3528,13 @@ input, select, textarea {
 			#banner {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #412f2e;
-				background-image: linear-gradient(to top, #dfccb6, rgba(228, 149, 59, 0.8)), url("../../images/bg.jpg");
+				background-image: linear-gradient(to top, #dbc3a7, rgba(228, 149, 59, 0.8)), url("../../images/bg.jpg");
 				background-size: auto,
  cover;
 				background-position: center,
  center;
- 				/*margin-bottom: -0.5em;*/
-				margin-bottom: -6.5em;
+ 				margin-bottom: -0.5em;
+				/*margin-bottom: -6.5em;*/
 			}
 
 		}
@@ -3738,9 +3751,9 @@ input, select, textarea {
 		}
 
 		.wrapper .inner {
-			padding: 3em 0 1em 0 ;
+			padding: 0 0 1em 0 ;
 			margin: 0 auto;
-			width: 60em;
+			width: 80em;
 		}
 
 		.wrapper.style2 {
@@ -3893,13 +3906,13 @@ input, select, textarea {
 				background-color: #dbc3a7;
 			}
 
-				/*.wrapper.spotlight.style2:before, .wrapper.spotlight.style2:after {
+				.wrapper.spotlight.style2:before, .wrapper.spotlight.style2:after {
 					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%234d5060%3B' /%3E%3C/svg%3E");
-				}*/
+				}
 
-				/*.wrapper.spotlight.style2:before {
+				.wrapper.spotlight.style2:before {
 					box-shadow: inset 0 -1px 0 0 #4d5060, 0 1px 0 0 #4d5060;
-				}*/
+				}
 
 				.wrapper.spotlight.style2:after {
 					box-shadow: inset 0 -1px 0 0 #dbc3a7, 0 1px 0 0 #dbc3a7;
@@ -4066,6 +4079,197 @@ input, select, textarea {
 			}
 
 		}
+/* Main */
+
+#main {
+	background-color: antiquewhite;
+	position: relative;
+	margin: 0 auto;
+	width: calc(100% - 4rem);
+	max-width: 72rem;
+	z-index: 2;
+}
+
+	#main > * {
+		padding: 4rem 4rem 2rem 4rem ;
+		border-top: solid 2px #eeeeee;
+		margin: 0;
+	}
+
+		#main > *:first-child {
+			border-top: 0;
+		}
+
+	#main > footer {
+		text-align: center;
+	}
+
+	#main > .post {
+		padding: 8rem 8rem 6rem 8rem ;
+	}
+
+		#main > .post header.major > .date {
+			margin-top: -2rem;
+		}
+
+		#main > .post header.major > h1, #main > .post header.major h2 {
+			font-size: 4rem;
+			line-height: 1.1;
+			margin: 0 0 2rem 0;
+		}
+
+		#main > .post.featured {
+			text-align: center;
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#main > .post {
+				padding: 6rem 4rem 4rem 4rem ;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#main > .post {
+				padding: 4rem 2rem 2rem 2rem ;
+			}
+
+				#main > .post header.major > .date {
+					margin-top: -1rem;
+					margin-bottom: 2rem;
+				}
+
+				#main > .post header.major > h1, #main > .post header.major h2 {
+					font-size: 2.5rem;
+					line-height: 1.2;
+					margin: 0 0 1.5rem 0;
+				}
+
+		}
+
+	#main > .posts {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-moz-align-items: -moz-stretch;
+		-webkit-align-items: -webkit-stretch;
+		-ms-align-items: -ms-stretch;
+		align-items: stretch;
+		text-align: center;
+		width: 100%;
+		padding: 0;
+	}
+
+		#main > .posts > * {
+			-moz-flex-shrink: 1;
+			-webkit-flex-shrink: 1;
+			-ms-flex-shrink: 1;
+			flex-shrink: 1;
+			-moz-flex-grow: 0;
+			-webkit-flex-grow: 0;
+			-ms-flex-grow: 0;
+			flex-grow: 0;
+		}
+
+		#main > .posts > * {
+			width: 50%;
+		}
+
+		#main > .posts > * {
+			padding: 4rem;
+			width: 50%;
+		}
+
+		#main > .posts > article {
+			border-color: #eeeeee;
+			border-left-width: 2px;
+			border-style: solid;
+			border-top-width: 2px;
+			text-align: center;
+		}
+
+			#main > .posts > article > :last-child {
+				margin-bottom: 0;
+			}
+
+			#main > .posts > article:nth-child(2n - 1) {
+				border-left-width: 0;
+			}
+
+			#main > .posts > article:nth-child(-n + 2) {
+				border-top-width: 0;
+			}
+
+		@media screen and (max-width: 980px) {
+
+			#main > .posts > * {
+				width: 50%;
+			}
+
+			#main > .posts > * {
+				padding: 2.5rem;
+				width: 50%;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#main > .posts > * {
+				width: 100%;
+			}
+
+			#main > .posts > * {
+				padding: 2rem;
+				width: 100%;
+			}
+
+			#main > .posts > article:nth-child(2n - 1) {
+				border-left-width: 2px;
+			}
+
+			#main > .posts > article:nth-child(-n + 2) {
+				border-top-width: 2px;
+			}
+
+			#main > .posts > article:nth-child(n) {
+				border-left-width: 0;
+			}
+
+			#main > .posts > article:nth-child(-n + 1) {
+				border-top-width: 0;
+			}
+
+			#main > .posts > article .image {
+				max-width: 25rem;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+		}
+
+	@media screen and (max-width: 736px) {
+
+		#main > * {
+			padding: 2rem 2rem 0.1rem 2rem ;
+		}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		#main {
+			width: 100%;
+		}
+
+	}
 
 /* Footer */
 
@@ -4223,3 +4427,4 @@ input, select, textarea {
 	.work{
 		text-align: left;
 	}
+	
