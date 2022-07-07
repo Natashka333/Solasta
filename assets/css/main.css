@@ -3264,6 +3264,9 @@ input, select, textarea {
 				text-indent: 4em;
 				position: relative;
 			}
+			#hidden{
+				display: none !important;
+			}
 
 				#header nav a[href="#menu"]:before {
 					width: inherit;
