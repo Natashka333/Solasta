@@ -463,7 +463,7 @@ input, select, textarea {
 		}
 
 		.row > .col-4 {
-			width: 33.33333%;
+			width: 55%;
 		}
 
 		.row > .off-4 {
@@ -494,13 +494,13 @@ input, select, textarea {
 			margin-left: 58.33333%;
 		}
 
-		.row > .col-8 {
+		/*.row > .col-8 {
 			width: 66.66667%;
 		}
 
 		.row > .off-8 {
 			margin-left: 66.66667%;
-		}
+		}*/
 
 		.row > .col-9 {
 			width: 75%;
@@ -817,7 +817,8 @@ input, select, textarea {
 				}
 
 					.row.gtr-50 > * {
-						padding: 0 0 0 0.875em;
+						padding: 0 ;
+						margin-left: 10%;
 					}
 
 					.row.gtr-50.gtr-uniform {
@@ -3134,7 +3135,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: #d59a55;
+		background-color: #ee7e50;
 		height: 3.5em;
 		left: 0;
 		line-height: 3.5em;
@@ -3263,6 +3264,13 @@ input, select, textarea {
 							}
 
 		}
+		@media screen and (min-width: 480px) {
+
+			#ghost{
+				display: none !important;
+			}
+	
+		}
 
 		@media screen and (max-width: 480px) {
 
@@ -3271,6 +3279,9 @@ input, select, textarea {
 				white-space: nowrap;
 				text-indent: 4em;
 				position: relative;
+			}
+			#hidden{
+				display: none !important;
 			}
 
 				#header nav a[href="#menu"]:before {
@@ -3527,14 +3538,15 @@ input, select, textarea {
 
 			#banner {
 				padding: 7em 0 8.25em 0 ;
-				background-color: #412f2e;
-				background-image: linear-gradient(to top, #dbc3a7, rgba(228, 149, 59, 0.8)), url("../../images/bg.jpg");
+				background-color: #dbc3a7;
+				background-image: linear-gradient(to top, #dbc3a7, #f46530), url("../../images/bg.jpg");
 				background-size: auto,
  cover;
 				background-position: center,
  center;
  				margin-bottom: -0.5em;
 				/*margin-bottom: -6.5em;*/
+				padding-bottom: 6.5em;
 			}
 
 		}
@@ -3544,8 +3556,8 @@ input, select, textarea {
 			#banner {
 				padding: 12em 3em 12.375em 3em ;
 				margin-bottom: -0.75em;
-				background-color: #412f2e;
-				background-image: linear-gradient(to top, #dbc3a7, rgba(228, 149, 59, 0.8)), url("../../images/bg.jpg");
+				background-color: #dbc3a7;
+				background-image: linear-gradient(to top, #dbc3a7, #f46530), url("../../images/bg.jpg");
 			}
 
 				#banner .inner {
@@ -3559,9 +3571,10 @@ input, select, textarea {
 			#banner {
 				padding: 5em 2em 4.25em 2em ;
 				margin-bottom: -0.5em;
-				background-color: #412f2e;
-				background-image: linear-gradient(to top, #dbc3a7, rgba(228, 149, 59, 0.8)), url("../../images/bg.jpg");
+				background-color: #dbc3a7;
+				background-image: linear-gradient(to top, #dbc3a7, #f46530), url("../../images/bg.jpg");
 			}
+
 
 				#banner .logo {
 					margin: 0 0 1em 0;
@@ -3625,7 +3638,7 @@ input, select, textarea {
 		}
 
 		#wrapper > header h2 {
-			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+			border-bottom: solid 2px #dbc3a7;
 			font-size: 2em;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;
@@ -3644,7 +3657,7 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
-			background-color: #412f2e;
+			background-color: #dbc3a7;
 			background-image: linear-gradient(to top, rgba(228, 149, 59, 0.8)), rgba(228, 149, 59, 0.8), url("../../images/bg.jpg");
 			background-size: auto,
  cover;
@@ -3704,13 +3717,13 @@ input, select, textarea {
 			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%234d5060%3B' /%3E%3C/svg%3E");
 		}
 
-		.wrapper:before {
+		/*.wrapper:before {
 			box-shadow: inset 0 -1px 0 0 #dbc3a7, 0 1px 0 0 #dbc3a7;
-		}
+		}*/
 
-		.wrapper:after {
+		/*.wrapper:after {
 			box-shadow: inset 0 -1px 0 0 #dbc3a7, 0 1px 0 0 #dbc3a7;
-		}
+		}*/
 
 		.wrapper:before, .wrapper:after {
 			background-repeat: no-repeat;
@@ -4144,12 +4157,20 @@ input, select, textarea {
 				#footer .inner .copyright li a {
 					color: inherit;
 				}
+				.col-4.col-12-mobilep a {
+					border: 0;
+					display: inline-block;
+					padding: 0 1em;
+					box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.125);
+					color: white;
+					font-size: larger;
+				}
 
 	@media screen and (max-width: 2800px) {
 
 		#footer {
-			background-color: #d87e17;
-			background-image: linear-gradient(to top, rgba(228, 149, 59, 0.8), #dbc3a7), url("../../images/bg.jpg");
+			background-color: #dbc3a7;
+			background-image: linear-gradient(to top, #f46530, #dbc3a7), url("../../images/bg.jpg");
 			background-size: auto,
  cover;
 			background-position: center,
