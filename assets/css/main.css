@@ -4169,8 +4169,8 @@ input, select, textarea {
  cover;
 			background-position: center,
  center;
-			margin-top: -6.5em;
-			padding-top: 6.5em;
+			margin-top: -6.75em;
+			padding-top: 6.75em;
 		}
 
 	}
@@ -4178,8 +4178,8 @@ input, select, textarea {
 	@media screen and (max-width: 980px) {
 
 		#footer {
-			margin-top: -4.75em;
-			padding-top: 4.75em;
+			margin-top: -6.75em;
+			padding-top: 6.75em;
 		}
 
 			#footer .inner {
@@ -4207,8 +4207,8 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		#footer {
-			margin-top: -2.5em;
-			padding-top: 2.5em;
+			margin-top: -2.75em;
+			padding-top: 6.75em;
 		}
 
 			#footer .inner {
