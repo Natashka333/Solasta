@@ -198,7 +198,7 @@ input, select, textarea {
 			letter-spacing: 0.1em;
 			margin: 0 0 2em 0;
 			text-transform: uppercase;
-			color: red;
+			color: #4d5060;
 			box-shadow: none;
 		}
 
@@ -296,7 +296,7 @@ input, select, textarea {
 
 	h3 {
 		font-size: 0.9em;
-		color: red;
+		color: #4d5060;
 		font-weight: 600;
 	}
 
