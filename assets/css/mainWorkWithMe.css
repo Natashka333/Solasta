@@ -71,7 +71,13 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
-
+.centered-text {
+	max-width: 900px;
+	margin: 0 auto; /* centers the container */
+	text-align: left; /* optional: keeps text aligned left inside */
+	padding: 0 1rem; /* optional: adds some space on small screens */
+  }
+  
 /* Basic */
 
 	@-ms-viewport {
